@@ -25,7 +25,11 @@ cd ../client
 npm install
 ```
 
-### 4. **Run the Application Locally**
+### 4. **Environment Variables**
+- Copy `.env.example` to `.env` in both `server` and `client` folders and fill in the required values.
+- Never commit your real `.env` files!
+
+### 5. **Run the Application Locally**
 - **Start the server:**
   ```
   cd server
@@ -60,17 +64,57 @@ npm install
 
 ---
 
-## Screenshots / GIFs
+## Deployment Instructions
 
-> _Chat-app.png
-_
+### Backend (Express/Node)
+1. Push your code to GitHub.
+2. Deploy to [Render](https://render.com/) (or Railway/Heroku):
+   - Create a new Web Service.
+   - Set the root directory to `server`.
+   - Set environment variables (`MONGODB_URI`, `PORT`).
+   - Use `npm install` as the build command and `node server.js` as the start command.
+3. After deployment, note your backend URL (e.g., `https://your-backend.onrender.com`).
+
+### Frontend (React)
+1. Update `client/.env`:
+   ```
+   REACT_APP_API_URL=https://your-backend.onrender.com
+   ```
+2. Push changes to GitHub.
+3. Deploy to [Vercel](https://vercel.com/) or [Netlify](https://netlify.com/):
+   - Connect your repo and select the `client` folder as the root.
+   - Set environment variables as needed.
+   - Use `npm run build` as the build command.
+4. After deployment, note your frontend URL (e.g., `https://your-frontend.vercel.app`).
 
 ---
 
-## Deployment (Optional)
+## Live URLs
+- **Backend API:** [Add your backend Render/Railway/Heroku URL here]
+- **Frontend App:** [Add your frontend Vercel/Netlify URL here]
 
-- **Server deployed at:** [Add your server URL here]
-- **Client deployed at:** [Add your client URL here]
+---
+
+## CI/CD Pipeline
+- This project uses GitHub Actions for CI/CD.
+- See `.github/workflows/ci.yml` for details.
+- ![CI/CD Pipeline Screenshot](./ci-cd-screenshot.png) <!-- Replace with your actual screenshot after running the pipeline -->
+
+---
+
+## Monitoring & Maintenance
+- **Monitoring setup:** [Describe your monitoring tools and setup here, e.g., UptimeRobot, Sentry, etc.]
+- **Health check endpoint:** `/health` (add to your backend if not present)
+- **Performance tracking:** [Describe any tools or methods used]
+- **Maintenance plan:** [Describe your plan for updates, backups, etc.]
+
+---
+
+## Screenshots
+- ![App Screenshot](./Chat-app.png)
+- ![Messages Screenshot](./Messages.png)
+- ![Rooms Screenshot](./rooms.png)
+- ![CI/CD Pipeline Screenshot](./ci-cd-screenshot.png) <!-- Add your own pipeline screenshot -->
 
 ---
 
