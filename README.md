@@ -7,123 +7,42 @@ This is a real-time chat application built with React (client) and Node.js/Expre
 
 ## Setup Instructions
 
-### 1. **Clone Your Repository**
-```
-git clone <your-github-classroom-repo-url>
-cd <repo-folder>
-```
-
-### 2. **Install Server Dependencies**
-```
-cd server
-npm install
-```
-
-### 3. **Install Client Dependencies**
-```
-cd ../client
-npm install
-```
-
-### 4. **Environment Variables**
-- Copy `.env.example` to `.env` in both `server` and `client` folders and fill in the required values.
-- Never commit your real `.env` files!
-
-### 5. **Run the Application Locally**
-- **Start the server:**
-  ```
-  cd server
-  npm run dev
-  ```
-- **Start the client:**
-  ```
-  cd ../client
-  npm start
-  ```
-- Open [http://localhost:3000](http://localhost:3000) in your browser.
+1. Clone the repository and install dependencies for both `server` and `client`.
+2. Copy `.env.example` to `.env` in both folders and fill in your environment variables.
+3. Run the backend and frontend locally for development.
 
 ---
 
-## Features Implemented
-- **User authentication** (username-based)
-- **Global chat rooms** (general, random)
-- **Private messaging** between users
-- **Display messages** with sender and timestamp
-- **Typing indicators**
-- **Online/offline user status**
-- **Multiple chat rooms/channels**
-- **File/image sharing** (inline images, downloadable files)
-- **Message reactions** (👍, ❤️, 😂, toggleable)
-- **Read receipts (delivered status)**
-- **Real-time notifications** (browser and sound)
-- **Unread message count**
-- **Message search**
-- **Message pagination** (load older messages)
-- **Responsive design** (desktop/mobile)
-- **Error handling and reconnection logic**
+## Deployment Summary
 
----
-
-## Deployment Instructions
-
-### Backend (Express/Node)
-1. Push your code to GitHub.
-2. Deploy to [Render](https://render.com/) (or Railway/Heroku):
-   - Create a new Web Service.
-   - Set the root directory to `server`.
-   - Set environment variables (`MONGODB_URI`, `PORT`).
-   - Use `npm install` as the build command and `node server.js` as the start command.
-3. After deployment, note your backend URL (e.g., `https://your-backend.onrender.com`).
-
-### Frontend (React)
-1. Update `client/.env`:
-   ```
-   REACT_APP_API_URL=https://your-backend.onrender.com
-   ```
-2. Push changes to GitHub.
-3. Deploy to [Vercel](https://vercel.com/) or [Netlify](https://netlify.com/):
-   - Connect your repo and select the `client` folder as the root.
-   - Set environment variables as needed.
-   - Use `npm run build` as the build command.
-4. After deployment, note your frontend URL (e.g., `https://your-frontend.vercel.app`).
-
----
-
-## Live URLs
-- **Backend API:** [Add your backend Render/Railway/Heroku URL here]
-- **Frontend App:** [Add your frontend Vercel/Netlify URL here]
+- **Backend deployed on Render:**
+  - [Live Backend API](https://week-7-devops-deployment-assignment-sibf.onrender.com)
+- **Frontend deployed on Netlify:**
+  - [Live Frontend App](<your-frontend-netlify-url>)
 
 ---
 
 ## CI/CD Pipeline
-- This project uses GitHub Actions for CI/CD.
-- See `.github/workflows/ci.yml` for details.
-- ![CI/CD Pipeline Screenshot](./ci-cd-screenshot.png) <!-- Replace with your actual screenshot after running the pipeline -->
+- Automated with GitHub Actions (`.github/workflows/ci.yml`).
+- Runs build and test steps for both backend and frontend on every push or pull request.
+- ![CI/CD Pipeline Screenshot](./ci-cd-screenshot.png)
 
 ---
 
 ## Monitoring & Maintenance
-- **Monitoring setup:** [Describe your monitoring tools and setup here, e.g., UptimeRobot, Sentry, etc.]
-- **Health check endpoint:** `/health` (add to your backend if not present)
+- **Monitoring:** [Describe your monitoring tools, e.g., UptimeRobot, Sentry, etc.]
+- **Health check endpoint:** `/health` (if implemented)
 - **Performance tracking:** [Describe any tools or methods used]
-- **Maintenance plan:** [Describe your plan for updates, backups, etc.]
-
----
-
-## Screenshots
-- ![App Screenshot](./Chat-app.png)
-- ![Messages Screenshot](./Messages.png)
-- ![Rooms Screenshot](./rooms.png)
-- ![CI/CD Pipeline Screenshot](./ci-cd-screenshot.png) <!-- Add your own pipeline screenshot -->
+- **Maintenance plan:** [Describe your plan for updates, patches, and backups]
 
 ---
 
 ## Submission Notes
-- Commit and push your code regularly to show progress.
-- Ensure both client and server code are included in your repository.
-- The instructor will review your submission after autograding is complete.
+- Both client and server code are included in this repository.
+- All environment variable templates are provided as `.env.example` files.
+- Screenshots and documentation are included as required.
 
 ---
 
 ## Credits
-- Built with [React](https://reactjs.org/), [Express](https://expressjs.com/), and [Socket.io](https://socket.io/). 
+- Built with [React](https://reactjs.org/), [Express](https://expressjs.com/), [Socket.io](https://socket.io/), [Render](https://render.com/), and [Netlify](https://www.netlify.com/). 
