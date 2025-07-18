@@ -46,3 +46,6 @@ This is a real-time chat application built with React (client) and Node.js/Expre
 
 ## Credits
 - Built with [React](https://reactjs.org/), [Express](https://expressjs.com/), [Socket.io](https://socket.io/), [Render](https://render.com/), and [Netlify](https://www.netlify.com/). 
+
+## Live Demo
+[chatapp254.netlify.app](https://chatapp254.netlify.app) 
