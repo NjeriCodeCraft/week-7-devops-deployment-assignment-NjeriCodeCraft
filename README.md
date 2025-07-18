@@ -1,78 +1,85 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19945396&assignment_repo_type=AssignmentRepo)
-# Deployment and DevOps for MERN Applications
+# Real-Time Chat App
 
-This assignment focuses on deploying a full MERN stack application to production, implementing CI/CD pipelines, and setting up monitoring for your application.
+## Project Overview
+This is a real-time chat application built with React (client) and Node.js/Express/Socket.io (server). It supports public and private messaging, file/image sharing, reactions, notifications, and more. The app demonstrates bidirectional communication and real-time features suitable for modern chat platforms.
 
-## Assignment Overview
+---
 
-You will:
-1. Prepare your MERN application for production deployment
-2. Deploy the backend to a cloud platform
-3. Deploy the frontend to a static hosting service
-4. Set up CI/CD pipelines with GitHub Actions
-5. Implement monitoring and maintenance strategies
+## Setup Instructions
 
-## Getting Started
+### 1. **Clone Your Repository**
+```
+git clone <your-github-classroom-repo-url>
+cd <repo-folder>
+```
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Follow the setup instructions in the `Week7-Assignment.md` file
-4. Use the provided templates and configuration files as a starting point
+### 2. **Install Server Dependencies**
+```
+cd server
+npm install
+```
 
-## Files Included
+### 3. **Install Client Dependencies**
+```
+cd ../client
+npm install
+```
 
-- `Week7-Assignment.md`: Detailed assignment instructions
-- `.github/workflows/`: GitHub Actions workflow templates
-- `deployment/`: Deployment configuration files and scripts
-- `.env.example`: Example environment variable templates
-- `monitoring/`: Monitoring configuration examples
+### 4. **Run the Application Locally**
+- **Start the server:**
+  ```
+  cd server
+  npm run dev
+  ```
+- **Start the client:**
+  ```
+  cd ../client
+  npm start
+  ```
+- Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Requirements
+---
 
-- A completed MERN stack application from previous weeks
-- Accounts on the following services:
-  - GitHub
-  - MongoDB Atlas
-  - Render, Railway, or Heroku (for backend)
-  - Vercel, Netlify, or GitHub Pages (for frontend)
-- Basic understanding of CI/CD concepts
+## Features Implemented
+- **User authentication** (username-based)
+- **Global chat rooms** (general, random)
+- **Private messaging** between users
+- **Display messages** with sender and timestamp
+- **Typing indicators**
+- **Online/offline user status**
+- **Multiple chat rooms/channels**
+- **File/image sharing** (inline images, downloadable files)
+- **Message reactions** (👍, ❤️, 😂, toggleable)
+- **Read receipts (delivered status)**
+- **Real-time notifications** (browser and sound)
+- **Unread message count**
+- **Message search**
+- **Message pagination** (load older messages)
+- **Responsive design** (desktop/mobile)
+- **Error handling and reconnection logic**
 
-## Deployment Platforms
+---
 
-### Backend Deployment Options
-- **Render**: Easy to use, free tier available
-- **Railway**: Developer-friendly, generous free tier
-- **Heroku**: Well-established, extensive documentation
+## Screenshots / GIFs
 
-### Frontend Deployment Options
-- **Vercel**: Optimized for React apps, easy integration
-- **Netlify**: Great for static sites, good CI/CD
-- **GitHub Pages**: Free, integrated with GitHub
+> _Chat-app.png
+_
 
-## CI/CD Pipeline
+---
 
-The assignment includes templates for setting up GitHub Actions workflows:
-- `frontend-ci.yml`: Tests and builds the React application
-- `backend-ci.yml`: Tests the Express.js backend
-- `frontend-cd.yml`: Deploys the frontend to your chosen platform
-- `backend-cd.yml`: Deploys the backend to your chosen platform
+## Deployment (Optional)
 
-## Submission
+- **Server deployed at:** [Add your server URL here]
+- **Client deployed at:** [Add your client URL here]
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+---
 
-1. Complete all deployment tasks
-2. Set up CI/CD pipelines with GitHub Actions
-3. Deploy both frontend and backend to production
-4. Document your deployment process in the README.md
-5. Include screenshots of your CI/CD pipeline in action
-6. Add URLs to your deployed applications
+## Submission Notes
+- Commit and push your code regularly to show progress.
+- Ensure both client and server code are included in your repository.
+- The instructor will review your submission after autograding is complete.
 
-## Resources
+---
 
-- [GitHub Actions Documentation](https://docs.github.com/en/actions)
-- [MongoDB Atlas Documentation](https://docs.atlas.mongodb.com/)
-- [Render Documentation](https://render.com/docs)
-- [Railway Documentation](https://docs.railway.app/)
-- [Vercel Documentation](https://vercel.com/docs)
-- [Netlify Documentation](https://docs.netlify.com/) 
+## Credits
+- Built with [React](https://reactjs.org/), [Express](https://expressjs.com/), and [Socket.io](https://socket.io/). 
