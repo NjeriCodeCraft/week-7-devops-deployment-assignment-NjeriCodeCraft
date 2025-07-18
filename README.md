@@ -16,7 +16,7 @@ This is a real-time chat application built with React (client) and Node.js/Expre
 ## Deployment Summary
 
 - **Backend deployed on Render:**
-  - [Live Backend API](https://week-7-devops-deployment-assignment-sibf.onrender.com)
+  - [Live Backend API]([https://week-7-devops-deployment-assignment-sibf.onrender.com])
 - **Frontend deployed on Netlify:**
   - [Live Frontend App](<your-frontend-netlify-url>)
 
